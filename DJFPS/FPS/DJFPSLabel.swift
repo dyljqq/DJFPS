@@ -78,8 +78,8 @@ fileprivate extension Selector {
 fileprivate extension NSMutableAttributedString {
   
   func set(color: UIColor, range: NSRange) {
-    addAttribute(kCTForegroundColorAttributeName as NSAttributedStringKey, value: color.cgColor, range: range)
-    addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: range)
+    addAttribute(kCTForegroundColorAttributeName as String, value: color.cgColor, range: range)
+    addAttribute(NSForegroundColorAttributeName, value: color, range: range)
   }
   
 }
